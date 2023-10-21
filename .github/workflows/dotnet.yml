@@ -32,9 +32,6 @@ jobs:
       - name: Build Solution
         run: |
           msbuild.exe Binary_Search_Homework.sln /p:platform="Any CPU" /p:configuration="Release"
-      
-      - name: List files in Debug directory
-        run: ls Binary_Search_Homework_Test\bin\Debug
 
       - name: Run Tests
-        run: vstest.console.exe Binary_Search_Homework_Test\bin\Debug\Binary_Search_Homework_Test.dll
+        run: vstest.console.exe Binary_Search_Homework_Test\bin\Release\Binary_Search_Homework_Test.dll
