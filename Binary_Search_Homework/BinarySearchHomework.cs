@@ -14,6 +14,7 @@ namespace Binary_Search_Homework // don't edit this line!!!
                                                                                 // من الممكن تمرير قيمة 0 لتجاهلهم
         {
             //TODO: write code for the ternary search algorithm and return the index of the element
+            return -1;
         }
 
         public static int BinarySearchForCalculatingRepeated
@@ -23,12 +24,14 @@ namespace Binary_Search_Homework // don't edit this line!!!
                                                                     // من الممكن تمرير قيمة 0 لتجاهلهم
         {
             //TODO: this methods is for getting the first accurence of the key and the last accurance
+            return -1;
         }
 
         public static int GetRepeatCount(int[] arr, int key) // don't edit this line!!!
         {
             //TODO: write code to calculate the repeat count of a spacific element
             // make sure to use the previous method in this method
+            return -1;
         }
     }
 }
