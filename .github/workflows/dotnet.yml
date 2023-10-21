@@ -27,11 +27,11 @@ jobs:
         run: cd $GITHUB_WORKSPACE
 
       - name: Restore Packages
-        run: nuget restore Sandbox.sln
-
+        run: nuget restore Binary_Search_Homework.sln
+        
       - name: Build Solution
         run: |
-          msbuild.exe Sandbox.sln /p:platform="Any CPU" /p:configuration="Release"
+          msbuild.exe Binary_Search_Homework.sln /p:platform="Any CPU" /p:configuration="Release"
         
       - name: Run Tests
-        run: vstest.console.exe .\tests\Sandbox.Tests\bin\Release\Sandbox.Tests.dll
+        run: vstest.console.exe .\Binary_Search_Homework_Test\bin\Debug\Binary_Search_Homework_Test.dll
