@@ -34,4 +34,4 @@ jobs:
           msbuild.exe Binary_Search_Homework.sln /p:platform="Any CPU" /p:configuration="Release"
         
       - name: Run Tests
-        run: vstest.console.exe .\Binary_Search_Homework_Test\bin\Debug\Binary_Search_Homework_Test.dll
+        run: vstest.console.exe \Binary_Search_Homework_Test\bin\Debug\Binary_Search_Homework_Test.dll
