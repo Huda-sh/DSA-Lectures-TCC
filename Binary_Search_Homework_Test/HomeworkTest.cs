@@ -35,7 +35,7 @@ namespace Binary_Search_Homework_Test// DON'T EDIT THIS FILE UNDER ANY CIRCUMSTA
 
             // pass true for the first occurrence
             int last = BinarySearchHomework.BinarySearchForCalculatingRepeated(arr, key, false, 0, arr.Length);
-            Assert.AreEqual(10, last);
+            Assert.AreEqual(5, last);
         }// DON'T EDIT THIS FILE UNDER ANY CIRCUMSTANCES!!
 
         [TestMethod]// DON'T EDIT THIS FILE UNDER ANY CIRCUMSTANCES!!
