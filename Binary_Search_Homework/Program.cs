@@ -22,8 +22,8 @@ namespace Binary_Search_Homework
             Console.WriteLine("=======================");
 
             int[] arr2 = { 1, 2, 2, 2, 3, 4, 5, 5, 5, 5, 5, 6, 7, 7, 8, 9 };
-            int key2 = 5;
-
+            //int key2 = 5;
+            int key2 = 2;
             int repeat_count = BinarySearchHomework.GetRepeatCount(arr2, key2);
 
             Console.WriteLine("the number 2 is repeated {0} times", repeat_count);
