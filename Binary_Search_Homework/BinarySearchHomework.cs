@@ -16,7 +16,7 @@ namespace Binary_Search_Homework // don't edit this line!!!
             //TODO: write code for the ternary search algorithm and return the index of the element
             if (start > end)
                 return -1;
-
+            //a
             int third = (end - start) / 3;
             int firstMid = start + third;
             int secondMid = start + 2 * third;
