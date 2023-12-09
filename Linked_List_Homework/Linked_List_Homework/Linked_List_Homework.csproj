@@ -4,12 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5E40CC4C-44E6-4C80-AFDF-06ACE8CEE00C}</ProjectGuid>
+    <ProjectGuid>{E5C4B8A9-6E69-40C7-B92F-3AF1B3A1BCD7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lec_03_Binary_Search</RootNamespace>
-    <AssemblyName>Lec_03_Binary_Search</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Linked_List_Homework</RootNamespace>
+    <AssemblyName>Linked_List_Homework</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -42,9 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LinkedList.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Search.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
