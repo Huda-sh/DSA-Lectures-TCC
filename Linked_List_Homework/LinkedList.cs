@@ -3,7 +3,7 @@
 namespace Linked_List_Homework
 {
     public class LinkedList
-    {
+    {  private Node head;
         public Node First { get; set; }
 
         public void Print()
@@ -17,27 +17,61 @@ namespace Linked_List_Homework
             Console.WriteLine();
         }
 
-        // methods
         public void Add(int val)
-        {
-            // TODO: add item to the end of the list
-            // consider when the list is empty
-
-            // create a new node with the given data
+        { Node newnode=new Node (val);
+          if (head==null){
+           head =new Node;}
+           else{Node current =head ;
+                while(current.next!=null){
+                current =current. next;}
+                current. next =new Node;
+          }     
+    
         }
         public void RemoveKey(int key)
         {
-            // TODO: search for the key and remove it from the list
-            // consider when the key does not exist and when the list is empty
+    
+            if(head==null)
+            {return;
+            }
+            if (head. data==key){
+                head=head. next;
+                return;
+            }
+            Node current =head;
+            while (current.next!=null)
+            {if (current.next.data==key){
+                current.next =current.next.next;
+                return;}
+             current =current.next;
+            } 
+            
         }
         public void Merge(LinkedList other_list)
         {
-            // TODO: merge this list with the other list
+            if (head==null)
+            {head =other list.head;
+             return;}
+            Node current =head;
+            while (current.next!=null)
+            {current =current.next;
+            }
+            current. next =other list.head;
         }
         public void Reverse()
         {
-            // TODO: revers the nodes of this list
-            // initialize three pointers: prev, curr, and next
+         if (head==null || head.next==null)
+         {return;
+         }
+         Node prev=null;
+         Node current =head;
+        Node nextnode=null;
+            while (current!=null)
+            {next Node =current.next;
+             current.next =prev;
+             prev=current;
+             current =next Node;}
+            head =prev;
         }
     }
 }
